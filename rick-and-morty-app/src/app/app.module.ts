@@ -6,6 +6,8 @@ import { ListDataComponent } from './list-data/list-data.component';
 import { CharacterCardComponent } from './character-card/character-card.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { CharacterService } from './services/character.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,9 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
   ],
   imports: [
     BrowserModule
+    , HttpClientModule
   ],
-  providers: [],
+  providers: [CharacterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Character } from 'src/model/character';
 
 @Component({
   selector: 'app-character-card',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./character-card.component.sass']
 })
 export class CharacterCardComponent {
-
+  @Input("character")
+  public character: Character | any;
 }

@@ -1,4 +1,6 @@
-<app-character-card></app-character-card>
-<app-character-card></app-character-card>
-<app-character-card></app-character-card>
-<app-character-card></app-character-card>
+<app-character-card 
+    *ngFor="let character of characterService.characters"
+    [character] = "character"
+></app-character-card>
+
+

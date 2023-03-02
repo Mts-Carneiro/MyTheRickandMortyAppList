@@ -1,11 +1,11 @@
-<div class="character-card">
+<div class="character-card" *ngIf="character">
     <div class="character-card--image">
-        <img src="https://rickandmortyapi.com/api/character/avatar/109.jpeg" alt="Duck With Muscles">
+        <img src={{character.image}} alt="Duck With Muscles">
     </div>
     <div class="character-card--description">
-        <h2 class="character-card--description--name">Duck With Muscles</h2>
-        <span class="character-card--description--id">Id: 109</span>
-        <span class="character-card--description--gender">Male</span>
-        <span class= "character-card--description--status">Dead - Alien</span>
+        <h2 class="character-card--description--name">{{character.name}}</h2>
+        <span class="character-card--description--id">Id: {{character.id}}</span>
+        <span class="character-card--description--gender">{{character.gender}}</span>
+        <span class= "character-card--description--status">{{character.status}} - {{character.species}}</span>
     </div>
 </div>
