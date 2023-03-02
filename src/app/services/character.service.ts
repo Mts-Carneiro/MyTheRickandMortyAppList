@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Character } from 'src/model/character';
-import { from, map, mergeMap, ReplaySubject } from 'rxjs';
+import { from, map, mergeMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
