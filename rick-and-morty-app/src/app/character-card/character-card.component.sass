@@ -1,0 +1,33 @@
+.character-card
+    display: flex
+    flex-direction: row
+    border-radius: 15px
+    background: #a56b1e
+    margin-bottom: 15px
+    height: 200px
+    width: 400px
+    flex-wrap: wrap
+    align-content: space-between
+    align-items: center
+
+
+
+    &--image
+        img
+            height: 200px
+            border-radius: 15px 0px 0px 15px
+            padding-right: 10px
+
+    &--description
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        &--name
+            margin-top: 0px
+            font-size: larger
+        &--id
+            font-size: small
+            padding-bottom: 10px
+        &--gender
+            font-weight: 600
+            padding-bottom: 10px 
