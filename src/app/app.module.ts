@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { CharacterService } from './services/character.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CharacterModalComponent } from './character-modal/character-modal.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     ListDataComponent,
     CharacterCardComponent,
     HeaderComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    CharacterModalComponent
   ],
   imports: [
     BrowserModule
