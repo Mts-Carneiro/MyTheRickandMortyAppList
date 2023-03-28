@@ -1,5 +1,9 @@
-<div class="character-modal">
+<div class="character-modal" *ngIf="characterById">
     <button (click)="closeModal()">x</button>
-    <h2>modal test</h2>
-    <span>este é o teste do modal</span>
-</div>
+    <h2>{{ characterById.name }}</h2>
+    <img [src]="characterById.image" [alt]="characterById.name">
+    <p>Status: {{ characterById.status }}</p>
+    <p>Species: {{ characterById.species }}</p>
+    <p>Type: {{ characterById.type }}</p>
+    <p>Gender: {{ characterById.gender }}</p>
+  </div>
